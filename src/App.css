@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  background-color:#36384D;
+}
+.main-cont{
+  display: flex;
+ padding:10px;
+ background-color: #fff;
+ border-radius: 30px;
+}
+.first-cont{
+   margin: 5px;
+   padding-left: 35px;
+}
+.head{
+  font-size: 40px;
+}
+.diskpic{
+  height: 500px;
+  width: 350px;
+}
+.ptxt1{
+  width: 400px;
+}
+.list-items{
+  display: flex;
+    align-items: center;
+}
+.list-items img{
+  margin-right: 20px;
+}
+.form-field{
+      display: flex;
+        flex-direction: column;
+}
+.elbl{
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 28px;
+}
+.err-lab-p{
+      display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 353px;
+}
+.errcls{
+  color:red
+}
+.email-input{
+  width: 336px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 27px;
+    transition: transform 0.3s ease;
+}
+.email-input:hover{
+    transform: scale(1.02);
+}
+.email-error{
+  border: 2px solid red;
+  width: 336px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 17px;
+    color: red;
+    background-color: rgb(229, 189, 189);
+    font-weight: 500;
+    margin-bottom: 27px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submit-btn{
+  width: 353px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition:  0.3s transform ease;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submit-btn:hover{
+  background-color: rgb(240, 146, 53);
+  border: 2px solid transparent;
+  color: #000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit-btn:active{
+  transform: scale(1.05);
+}
+.card-sv{
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.paratxt2{
+  width: 360px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.head-sv{
+      font-size: 30px;
+        letter-spacing: 1px;
+        width: 212px;
+}
+.dissbtn{
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #000;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s transform ease;
+}
+.dissbtn:hover {
+   background-color: rgb(240, 146, 53);
+   border: 2px solid transparent;
+   color: #000;
+}
+.dissbtn:active {
+  transform: scale(1.05);
+}
+.mobile-view{
+  display: none;
+}
+/* mobile view */
+@media  screen and (max-width:425px) {
+  .App{
+    background-color: #fff;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .diskpic{
+    display: none;
   }
+  .mobile-view{
+    display: block;
+    min-width: 430px;
+  }
+    .main-cont {
+      display: block;
+    }
 }
